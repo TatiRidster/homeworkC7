@@ -19,7 +19,7 @@ void CreateArray(double[,] array)
 void print2DArray(double[,] arrayToPrint)
 {
     Console.Write($"[ ]\t");
-    const int startIndex = 65;
+    const int startIndex = 49;
     for (var i = startIndex + 0; i < startIndex + arrayToPrint.GetLength(1); i++)
     {
         Console.Write($"[{((char)i)}]\t");
@@ -27,7 +27,7 @@ void print2DArray(double[,] arrayToPrint)
     Console.WriteLine();
     for (var i = 0; i < arrayToPrint.GetLength(0); i++)
     {
-        Console.Write($"[" + i + "]\t");
+        Console.Write($"[" + (i+1) + "]\t");
 
         for (int j = 0; j < arrayToPrint.GetLength(1); j++)
         {
