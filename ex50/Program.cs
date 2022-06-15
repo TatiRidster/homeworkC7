@@ -91,8 +91,8 @@ double[,] array = new double[m, n];
 CreateArray(array);
 print2DArray(array);
 Console.WriteLine();
-Console.Write("Введите координаты позиции элемента, разделенные запятой: ");
-
+Console.WriteLine("Введите координаты сначала строки, затем столбца, разделяя запятой. ");
+Console.Write("Координаты указаны в квадратных скобках: ");
 string? positionElement = Console.ReadLine();
 positionElement = RemovingSpaces(positionElement);
 int[] position = ParserString(positionElement);
