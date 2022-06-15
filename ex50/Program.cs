@@ -46,7 +46,6 @@ int[] ParserString(string input)
         if (input[i] == ',')
             countNumbers++;
     }
-
     int[] numbers = new int[countNumbers];
 
     int numberIndex = 0;
